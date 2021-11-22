@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+  // background-image: url(/assets/blob-haikei-20.svg);
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: center; 
+  // background-position:  55% 170%;
+	/* background: linear-gradient(-45deg, black, darkblue, #10035a, rgb(70, 4, 4));
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite; */
+}
+.bg-img {
+  position: absolute;
+  z-index: -1;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+body {
+  font-family: 'Anton';
+  padding: 20px 60px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.twofa-text {
+    color: black;
+}
+
+.twofa-secret {
+    color: gray;
+    font-size: x-small;
+}
+
+.realAvatar {
+    /* make a square container */
+    width: 150px;
+    height: 150px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: top center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+}
+
+.font-ok {
+    font-family: sans-serif;
+}

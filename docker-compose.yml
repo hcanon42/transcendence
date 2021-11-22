@@ -1,0 +1,35 @@
+# docker-compose.yml
+version: '3'
+services:
+  database:
+    image: "postgres" # use latest official postgres version
+    env_file:
+      - ./srcs/database.env # configure postgres
+    volumes:
+      - /var/lib/postgresql/data/ # persist data even if container shuts downvolumes:
+    ports:
+      - "8001:5432"
+  backend:
+    build: ./srcs/pong-backend/
+    ports:
+      - "3000:3000"
+      - "3002:3002"
+      - "3003:3003"
+    environment: 
+      - API_UID=${API_UID}
+      - API_SECRET=${API_SECRET}
+      - APP_SECRET=${APP_SECRET}
+      - DB_HOST=database
+      - DB_PORT=5432
+      - FRONTEND_URL=${FRONTEND_URL}
+      - PORT_ONE=3002
+      - PORT_TWO=3003
+  front:
+    build:
+      context: ./srcs/front-typescript/
+      args:
+        - REACT_APP_API_UID=${API_UID}
+    ports:
+      - "80:3000"
+    environment: 
+      - REACT_APP_API_UID=${API_UID}
