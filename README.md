@@ -1,6 +1,6 @@
 ft_transcendence is the last project of the 42CommonCore.
 
-Made with Typescript, NestJs and  PostGreSQL 
+Made with Typescript, NestJs and PostGreSQL 
 
 ## What is it about ?
 
@@ -12,7 +12,7 @@ They also have access to an account page where they can change their name or ava
 
 ## How to launch it ?
 
-After dl the repo `git clone https://github.com/blaneart/transcendence`
+After dl the repo `git clone https://github.com/hcanon42/transcendence`
 You can simply run `docker-compose up --build` in the folder downloaded and ... wait up to 10 minutes (this is a fullstack js project what did you expect ?).
 
 ## A few screenshots of the final product
