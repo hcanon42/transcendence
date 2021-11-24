@@ -15,7 +15,7 @@ They also have access to an account page where they can change their name or ava
 After dl the repo `git clone https://github.com/blaneart/transcendence`
 You can simply run `docker-compose up --build` in the folder downloaded and ... wait up to 10 minutes (this is a fullstack js project what did you expect ?).
 
-## A few scrrenshots of the final product
+## A few screenshots of the final product
 
 Please note that we did not spend as much time on front as we did on backend/functionnalities
 
